@@ -1,0 +1,4 @@
+1 - work only when button is clicked
+2 - get input from user
+3 - calculate change due to user
+4 - update page to show user their change

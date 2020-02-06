@@ -1,8 +1,47 @@
 <html>
     <head>
         <title>Simple Website</title>
+        <script src="script.js" defer="defer"></script>
+        <script src="coins.js" defer="defer"></script>
     </head>
     <body bgcolor="#23B8AE">
         <h1>Hello Vlada</h1>
+
+        <div id="menu">
+            <button onclick="showCoinProgram();">Change Calculator</button>
+            <button onclick="showColorProgram();">Color Changer</button>
+        </div>
+
+        <hr/>
+
+        <div id="colorProgram">
+           <input type="color" id="colorPicker" input="changeBackgroundColor();"/>
+        </div>
+
+        <div id="coinProgram">
+            <input id="goodTimeInput"></input>
+            <button onclick="showUserChange();">Push me for a good time</button>
+            <p>
+                <img src="images\quarter.jpg" alt="quarter image" height="64" width="64" />
+                quarters:
+                <span id="goodQuarters"></span>
+            </p>
+            <p>
+                <img src="images\dime.jpg" alt="quarter image" height="64" width="64" />
+                dimes:
+                <span id="niceDimes"></span>
+            </p>
+            <p>
+                <img src="images\nickel.jpg" alt="quarter image" height="64" width="64" />
+                nickels:
+                <span id="coolNickels"></span>
+            </p>
+            <p>
+                <img src="images\penny.jpg" alt="quarter image" height="64" width="64" />
+                pennies:
+                <span id="sweetPennies"></span>
+            </p> 
+        </div>
+
     </body>
 </html>
